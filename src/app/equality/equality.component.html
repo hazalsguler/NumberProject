@@ -1,0 +1,10 @@
+<h1 style="display: flex; justify-content: center; color: brown;">Doğru Cevabı Kaç Saniyede Buldun ?</h1>
+
+<form [formGroup]="mathForm">
+    {{FirstNumber}} + {{SecondNumber}} =
+    <input type="text" formControlName = "answer">
+</form>
+
+<div class="correctAnswer">
+{{seconds | number : '1.1-3'}}
+</div>
